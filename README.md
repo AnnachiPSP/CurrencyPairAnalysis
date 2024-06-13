@@ -13,7 +13,8 @@ This application's purpose is to monitor and generate payload simulations for a 
 ## Usage
 
 This project can be run using android studio / visual studio / IntelliJ with either an emulator or your mobile phone. Steps that can be perfored are mentioned below
-
+OR
+You can deirectly download the [apk file](https://github.com/AnnachiPSP/CurrencyPairAnalysis/blob/master/app-currencyPair.apk) on your mobile phone 
 
 ### 1. Home Screen
 
