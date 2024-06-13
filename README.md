@@ -9,6 +9,8 @@ This application's purpose is to monitor and generate payload simulations for a 
 - Android Studio
 - WazirX API
 
+For more insight behind the logic and libraries used, you may check the [Documentation](https://github.com/AnnachiPSP/CurrencyPairAnalysis/blob/master/Documentation.docx)
+
 
 ## Usage
 
@@ -24,7 +26,7 @@ You would have to wait for few milli seconds as the data of the available curren
 
 ### 2. Action Screen
 
-After selecting the pair you wish to proceed with, in the next page, the current price of conversion will be visible and you there you will have to enter a convinient Buy Trigger and Sell Trigger
+After selecting the pair you wish to proceed with, in the next page, the current price of conversion will be visible and there you will have to enter a convinient Buy Trigger and Sell Trigger
 
 ![alt text](https://github.com/AnnachiPSP/CurrencyPairAnalysis/blob/master/img/action_page.jpg)
 
