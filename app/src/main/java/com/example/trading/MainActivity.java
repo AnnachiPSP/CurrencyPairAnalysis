@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(this, "Please select the pairs", Toast.LENGTH_SHORT).show();
             return;
         }
-        Intent page = new Intent(this, AnalysisPage.class);
+        Intent page = new Intent(this, TradeSimulation.class);
         page.putExtra("pair", selected);
         startActivity(page);
     }

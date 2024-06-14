@@ -38,7 +38,7 @@ public class SocketClient extends WebSocketListener {
 
     @Override
     public void onOpen(WebSocket ws, Response res) {
-        String msg = "{\"event\": \"subscribe\", \"streams\": [\"!ticker@arr\"]}";
+        String msg = "{\"event\": \"subscribe\", \"streams\": [\""+pair+"@depth\"]}";
         ws.send(msg);
     }
 
@@ -57,16 +57,9 @@ public class SocketClient extends WebSocketListener {
             }
 
             if(!json.has("event")){
-                JSONArray data = json.getJSONArray("data");
-                for(int i = 0; i<data.length(); i++){
-                    JSONObject obj = data.getJSONObject(i);
-                    // System.out.println(obj);             // Debug
-                    if(obj.getString("s").equals(this.pair)){
-                        // Log.d("chosen", ""+obj);                //bicoinr --> Most frequently receiving pair object
-                        if (callback != null) {
-                            callback.onMessageReceived(obj);
-                        }
-                    }
+                JSONObject data = json.getJSONObject("data");
+                if (callback != null) {
+                    callback.onMessageReceived(data);
                 }
             }
 
